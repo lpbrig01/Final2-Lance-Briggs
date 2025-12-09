@@ -1,0 +1,141 @@
+/* ============================================
+   SOCIAL ICON LIST
+   ============================================ */
+.ul-socials {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ul-socials li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.ul-socials li a {
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #222;
+  color: white !important;
+  transition: 0.2s ease;
+}
+
+.ul-socials li a:hover {
+  background: #444;
+}
+
+
+/* ============================================
+   IMAGE FLOATING (for About Me page)
+   ============================================ */
+
+.image-left-250 {
+  width: 250px;
+  float: left;
+  margin: 0 15px 15px 0;
+  border-radius: 8px;
+}
+
+.image-right-250 {
+  width: 250px;
+  float: right;
+  margin: 0 0 15px 15px;
+  border-radius: 8px;
+}
+
+.image-center-250 {
+  width: 250px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+/* ============================================
+   COLLAPSIBLE SECTIONS (Cleaner Modern Style)
+   ============================================ */
+
+.wrap-collapsible input[type="checkbox"] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  background: #111;
+  color: white !important;
+  padding: 12px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.lbl-toggle:hover {
+  background: #333;
+}
+
+.lbl-toggle::before {
+  content: "►";
+  margin-right: 10px;
+  transition: 0.25s ease;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+  background: #f7f7f7;
+  border-radius: 0 0 6px 6px;
+}
+
+.collapsible-content .content-inner {
+  padding: 15px;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 500px;
+}
+
+
+/* ============================================
+   TABLES (Cleaner Style)
+   ============================================ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+th {
+  background: #222;
+  color: white;
+}
+
+
+/* ============================================
+   GENERAL UTILITIES
+   ============================================ */
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}

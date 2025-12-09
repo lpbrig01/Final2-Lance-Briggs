@@ -1,0 +1,14 @@
+/* FULL-SITE BACKGROUND IMAGE */
+body {
+  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/01/cool-desktop-wallpaper-wallpapers-backgrounds-images-art-photos-pictures-free-best-1920x1080_coolwallpaper_good-wallpaper-ideas-house-entrance-design-hand-coat-hooks-7-princip.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Optional: dark overlay so text is readable */
+main, header, footer {
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+}
