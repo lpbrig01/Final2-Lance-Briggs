@@ -1,0 +1,80 @@
+# Base site settings
+baseURL = "https://final2-lance-briggs.netlify.app/"
+languageCode = "en-us"
+title = "Lance Briggs – Final Site"
+enableEmoji = true
+
+# Use Ananke via Hugo Modules
+theme = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+
+# Optional: a little caching speedup
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 6
+  path = "page"
+
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# ---------- Site Params ----------
+[params]
+  show_recent_posts = false
+  description = "Personal site of Lance Briggs"
+  background_color_class = "bg-black"
+
+  # 🔥 Your hero background image:
+  featured_image = "https://www.designyourway.net/blog/wp-content/uploads/2018/01/cool-desktop-wallpaper-wallpapers-backgrounds-images-art-photos-pictures-free-best-1920x1080_coolwallpaper_good-wallpaper-ideas-house-entrance-design-hand-coat-hooks-7-princip.jpg"
+
+  recent_posts_number = 3
+  cover_dimming_class = "bg-black-20"
+  site_header_text_background_color = "rgba(50, 50, 50, 0.7);"
+  page_header_text_background_color = "rgba(50, 50, 50, 0.7)"
+  custom_css = []
+
+[params.ananke]
+  show_recent_posts = false
+
+# ---------- Main Menu ----------
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "articles"
+  name = "Articles"
+  url = "/articles/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
